@@ -1,0 +1,16 @@
+{
+  "commandes": [
+    {
+      "id": 3,
+      "name": "Pommes",
+      "poid": "3 Kg",
+      "prix": "20 Dhs"
+    },
+    {
+      "id": 5,
+      "name": "Pommes",
+      "poid": "3 Kg",
+      "prix": "20 Dhs"
+    }
+  ]
+}

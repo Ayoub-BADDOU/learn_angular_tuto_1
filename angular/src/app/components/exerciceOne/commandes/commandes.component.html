@@ -1,0 +1,49 @@
+<div class="container w-25">
+    <form>
+        <div class="form-group">
+            <label for="one">Nom de la commande</label>
+            <input type="text" class="form-control" id="one" placeholder="Nom de la commande">
+        </div>
+
+        <div class="form-group">
+            <label for="two">Poids</label>
+            <input type="text" class="form-control" id="two" placeholder="Poids">
+        </div>
+
+        <div class="form-group">
+            <label for="three">Prix</label>
+            <input type="text" class="form-control" id="three" placeholder="Prix">
+        </div> 
+    </form>
+</div>
+
+
+<div class="container">
+
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Poids</th>
+            <th scope="col">Prix</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let commande of data">
+            <th scope="row">{{commande.id}}</th>
+            <td>{{commande.name}}</td>
+            <td>{{commande.poid}}</td>
+            <td>{{commande.prix}}</td>
+
+            <td>
+                <button (click)="deleteCommande(commande.id)" type="button" class="btn btn-danger">Supprimer</button>
+            </td>
+
+          </tr>
+        </tbody>
+    </table>
+
+</div>
+
